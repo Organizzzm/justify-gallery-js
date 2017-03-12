@@ -1,0 +1,15 @@
+.imageContainer {
+  margin: 3px;
+  position: relative;
+  float: left;
+  padding: 0px;
+}
+
+img {
+  margin: 0 3px 0 2px;
+  //transition: all .5s ease-out;
+}
+
+.gallery {
+  padding: 4px 0;
+}
