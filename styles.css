@@ -1,15 +1,30 @@
-.imageContainer {
-  margin: 3px;
+.item{
+  margin: 2px 3px 3px 2px;
   position: relative;
   float: left;
   padding: 0px;
+  background: #d2d2d2;
 }
 
 img {
-  margin: 0 3px 0 2px;
-  //transition: all .5s ease-out;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+img.show{
+  opacity: 1;
 }
 
 .gallery {
+  margin: 0 auto;
   padding: 4px 0;
+  min-width: 1024px;
+  max-width: 1600px;
+}
+
+.gallery:after {
+  content: '';
+  display: block;
+  clear: both;
 }
