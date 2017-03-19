@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.gallery {
+  min-width: 1024px;
+  max-width: 1600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.gallery:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.gallery__item {
+  margin: 2px;
+  position: relative;
+  float: left;
+  padding: 0px;
+  background: #d2d2d2;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.gallery__img--show {
+  opacity: 1;
+}
